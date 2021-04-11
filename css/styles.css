@@ -140,7 +140,6 @@ header .link {
 }
 .button-nav:hover,
 .button-nav:focus {
-  color: #f5f4fa;
   background-color: var(--accent-text-color);
   font-family: var(--title-font);
   font-weight: 500;
@@ -149,7 +148,6 @@ header .link {
   cursor: pointer;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: #212121;
 }
 .hero {
