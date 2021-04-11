@@ -22,9 +22,22 @@ body {
 }
 
 .link {
-  color: inherit;
+  /* color: inherit; */
   text-decoration: none;
 }
+
+.address-link {
+  color: var(--white-text-color);
+}
+
+header .link {
+  color: var(--main-text-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-text-color);
+}
+
 .link:hover,
 .link:focus {
   color: var(--accent-text-color);
@@ -36,7 +49,9 @@ body {
   font-style: inherit;
   color: var(--white-text-color);
 }
-
+.connect {
+  color: rgba(255, 255, 255, 0.6);
+}
 .page-title {
   font-family: var(--title-font);
   font-weight: 900;
@@ -61,52 +76,42 @@ body {
 }
 
 .section-title {
-  font-family: var(--main-font);
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 
 .feature-title {
-  font-family: var(--main-font);
+  font-family: var(--title-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
 
 .paragraf-text {
-  font-family: var(--main-font);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  font-family: var(--title-font);
 }
 
 .team-name {
-  font-family: var(--main-font);
+  font-family: var(--title-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 .profession-text {
-  font-family: var(--main-font);
+  font-family: var(-title-font);
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
 }
 
 .gallery-title {
-  font-family: var(--main-font);
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -114,19 +119,16 @@ body {
   color: var(--title-text-color);
 }
 .gallery-text {
-  font-family: var(--main-font);
+  font-family: var(--title-font);
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
 }
 
 /* Button */
-.button-order:hover,
-.button-order:focus {
+.button-order {
   color: var(--white-text-color);
   background-color: var(--accent-text-color);
-  font-family: var(--main-font);
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -140,14 +142,15 @@ body {
 .button-nav:focus {
   color: #f5f4fa;
   background-color: var(--accent-text-color);
-  font-family: var(--main-font);
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
   cursor: pointer;
 }
-
+.hero {
+  background-color: var(--dark-bg-color);
+}
 .dark-background {
   background-color: var(--dark-bg-color);
 }
@@ -164,7 +167,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03;
+  text-decoration: none;
 }
 
 /* Logo Website footer*/
@@ -174,7 +177,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .colortext {
   color: var(--accent-text-color);
@@ -184,9 +187,8 @@ body {
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
   cursor: pointer;
 }
 .site-nav .link:hover,
@@ -197,7 +199,6 @@ body {
 .auth-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   cursor: pointer;
